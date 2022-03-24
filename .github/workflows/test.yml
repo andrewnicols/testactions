@@ -2,6 +2,7 @@ name: Test GitHub Actions
 on: push
 
 jobs:
-  steps:
-    - name: test
-      run: which docker
+  test:
+    steps:
+      - name: test
+        run: which docker
