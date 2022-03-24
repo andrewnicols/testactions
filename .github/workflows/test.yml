@@ -12,7 +12,7 @@ jobs:
         run: docker ps
 
       - name: docker build
-        run: docker build --tag testaction .github/actions/example
+        run: docker build --tag testaction `pwd`/.github/actions/example
 
       - name: docker run
         run: docker run testaction
