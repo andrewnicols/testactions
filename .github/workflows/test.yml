@@ -7,3 +7,12 @@ jobs:
     steps:
       - name: test
         run: which docker
+
+      - name: docker ps
+        run: docker ps
+
+      - name: docker build
+        run: docker build -tag testaction .github/actions/example
+
+      - name: docker run
+        run: docker run testaction
